@@ -1,0 +1,12 @@
+@use '../Mixins';
+
+.bars {
+    @include Mixins.flex(column);
+    justify-content: center;
+    height: 16px;
+    width: 65px;
+    div {
+        height: 2px;
+        background: linear-gradient(90deg, #a49cb5 -17.46%, rgba(164, 156, 181, 0) 96.83%);
+    }
+}

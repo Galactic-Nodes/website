@@ -1,0 +1,28 @@
+@mixin flex($direction) {
+    display: flex;
+    flex-direction: $direction;
+}
+
+@mixin panel-button {
+    @include flex(row);
+    align-items: center;
+    gap: .2rem;
+    height: 35px;
+    line-height: 35px;
+    border: none;
+    background-color: #9e7de3;
+    color: white;
+    font-weight: bold;
+    font-family: 'poppins', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+        sans-serif;
+    padding-inline: .8rem;
+    cursor: pointer;
+}
+
+@mixin icon($size) {
+    height: $size;
+    width: $size;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: black;
+}

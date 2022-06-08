@@ -1,0 +1,35 @@
+@use '../Mixins';
+
+.footer {
+    @include Mixins.flex(row);
+    background: linear-gradient(116.81deg, #49396b 34.18%, #7353b8 92.67%);
+    padding: 2rem 5%;
+    justify-content: space-between;
+    > div {
+        @include Mixins.flex(row);
+        justify-content: space-evenly;
+        color: white;
+        width: 75%;
+        p {
+            font-weight: 600;
+            line-height: 24px;
+        }
+        a {
+            font-weight: 400;
+            h4 {
+                height: min-content;
+                border-bottom: 1px solid transparent;
+                transition: border-bottom-color 0.2s ease-in-out;
+            }
+            h4:hover {
+                border-bottom-color: white;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 850px) {
+    .footer {
+        padding: 4em 15%;
+    }
+}
