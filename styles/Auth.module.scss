@@ -1,0 +1,157 @@
+.authBox {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: min-content;
+    padding: 3.125rem 5.625rem;
+    border: 0.5px solid #8e58ff;
+    background: rgba(20, 20, 47, 0.22);
+    backdrop-filter: blur(10px);
+    z-index: 20;
+    color: white;
+    > a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo {
+        margin-top: 1rem;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3.125rem;
+        gap: 1rem;
+        label {
+            p {
+                align-self: flex-start;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+        input {
+            background: rgba(20, 20, 47, 0.22);
+            border: 0.5px solid #8e58ff;
+            backdrop-filter: blur(10px);
+        }
+        input[type='text'],
+        input[type='password'],
+        input[type='email'] {
+            width: 320px;
+            padding: 0.5rem 1rem;
+            height: 50px;
+            color: white;
+            font-size: 1.0625rem;
+        }
+    }
+}
+
+.mainSector {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(116.81deg, #49396b 34.18%, #7353b8 92.67%);
+    height: 100vh;
+    width: 100vw;
+    .remember {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-self: flex-start;
+        margin-left: 0.5rem;
+    }
+}
+.accountQuestion {
+    text-align: center;
+    a {
+        font-weight: bold;
+        border-bottom: solid 1px transparent;
+        transition: border-bottom-color 0.2s ease-in-out;
+    }
+    a:hover {
+        border-bottom-color: white;
+    }
+}
+
+.gnButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    color: white;
+    border: none;
+    background-color: #8e58ff;
+    font-family: 'Chakra Petch', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+        sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    cursor: pointer;
+    height: 40px;
+}
+
+.loginBtn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    border-radius: 2px;
+    gap: 0.4rem;
+    height: 40px;
+}
+.googleLogin {
+    @extend .loginBtn;
+    color: #757575;
+    background-color: white;
+    p {
+        font-weight: bold;
+        font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+            sans-serif;
+    }
+}
+.githubLogin {
+    @extend .loginBtn;
+    background-color: #2b3137;
+    p {
+        font-weight: bold;
+        font-family: Segoe UI, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+            sans-serif;
+    }
+}
+
+.slides {
+    display: flex;
+    flex-direction: row;
+    width: 320px;
+    overflow: hidden;
+    transition: height 0.2s linear;
+    > div,
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        min-width: 320px;
+        transition: margin-left 0.2s ease-in-out;
+        margin-left: 0;
+    }
+    .slide2 {
+        height: 0;
+        margin-left: 5.265rem;
+    }
+    .back {
+        color: white;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+}

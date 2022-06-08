@@ -1,0 +1,70 @@
+@use '../Mixins';
+
+.sidebar {
+    @include Mixins.flex(column);
+    padding: 0 0 0.25rem 0;
+    width: fit-content;
+    min-height: 100vh;
+    background: #49396b;
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 75px;
+        position: relative;
+        z-index: 15;
+    }
+    .menus {
+        margin-top: 2rem;
+        h5 {
+            @include Mixins.flex(row);
+            align-items: center;
+            font-style: normal;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #ffffff;
+            opacity: 0.5;
+            line-height: 27px;
+            letter-spacing: 0.03em;
+            height: 40px;
+            padding-inline: 1rem;
+            gap: 1rem;
+        }
+        button {
+            border: 0;
+            height: 40px;
+            color: white;
+            font-size: 10px;
+            background: none;
+            cursor: pointer;
+        }
+        .options {
+            overflow: hidden;
+            transition: height 0.2s linear;
+            p {
+                line-height: 40px;
+                text-align: left;
+                padding-inline: 1rem;
+                text-transform: capitalize;
+            }
+        }
+
+        > div {
+            position: relative;
+            @include Mixins.flex(column);
+            .menuSelector {
+                position: absolute;
+                width: 100%;
+                height: 40px;
+                opacity: 0.8;
+                background: linear-gradient(90deg, #727272 0%, rgba(41, 41, 41, 0) 100%);
+                pointer-events: none;
+                mix-blend-mode: screen;
+                transition: opacity 0.2s ease-in-out 0.1s, top 0.1s ease-in-out;
+            }
+            > div {
+                @include Mixins.flex(column);
+            }
+        }
+    }
+}

@@ -1,0 +1,50 @@
+{
+  "name": "website",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@dicebear/avatars": "^4.10.2",
+    "@dicebear/avatars-identicon-sprites": "^4.10.2",
+    "@fontsource/chakra-petch": "^4.5.7",
+    "@fontsource/poppins": "^4.5.8",
+    "axios": "^0.27.2",
+    "next": "12.1.6",
+    "particlesjs": "^2.2.3",
+    "react": "18.1.0",
+    "react-dom": "18.1.0",
+    "react-hook-form": "^7.31.3",
+    "react-icons": "^4.3.1",
+    "react-tsparticles": "^2.0.6",
+    "recharts": "^2.1.10",
+    "tsparticles": "^2.0.6",
+    "tsparticles-engine": "^2.0.6",
+    "tsparticles-preset-stars": "^2.0.6"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/node": "17.0.36",
+    "@types/react": "18.0.9",
+    "@types/react-dom": "18.0.5",
+    "@typescript-eslint/eslint-plugin": "^5.26.0",
+    "@typescript-eslint/parser": "^5.26.0",
+    "eslint": "^8.16.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-next": "^12.1.6",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.30.0",
+    "eslint-plugin-react-hooks": "^4.5.0",
+    "prettier": "^2.6.2",
+    "sass": "^1.52.1",
+    "snyk": "^1.940.0",
+    "typescript": "4.7.2"
+  }
+}
